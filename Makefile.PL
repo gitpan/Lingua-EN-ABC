@@ -20,4 +20,5 @@ WriteMakefile (
             bugtracker => "$repo/issues",
         },
     },
+    INST_SCRIPT => 'script',
 );
