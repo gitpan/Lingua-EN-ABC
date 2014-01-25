@@ -12,7 +12,7 @@ WriteMakefile (
     AUTHOR => 'Ben Bullock <bkb@cpan.org>',
     LICENSE => 'perl',
     PREREQ_PM => {
-	'JSON::Parse' => '0.14',
+	'JSON::Parse' => '0.23',
     },
     META_MERGE => {
         resources => {
@@ -21,4 +21,7 @@ WriteMakefile (
         },
     },
     INST_SCRIPT => 'script',
+    # Speculated necessary version of Perl. I have no test results
+    # which say otherwise.
+    MIN_PERL_VERSION => '5.006001',
 );
